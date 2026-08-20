@@ -2,6 +2,8 @@ Remplacez entièrement .github/workflows/build-apk.yml par le contenu ci‑desso
 
 ```yaml name=.github/workflows/build-apk.yml url=https://github.com/littlebattle/hello-world/blob/main/.github/workflows/build-apk.yml
 name: Build APK
+env:
+    GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
 on:
   push:
